@@ -1,0 +1,868 @@
+{
+  "name": "Esport",
+  "intents": [
+    {
+      "intent": "Genero",
+      "examples": [
+        {
+          "text": "soy niño"
+        },
+        {
+          "text": "mujer"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "Plataforma",
+      "examples": [
+        {
+          "text": "uso la plataforma xbox"
+        },
+        {
+          "text": "juego con la consola play"
+        },
+        {
+          "text": "juego en stream"
+        },
+        {
+          "text": "play"
+        },
+        {
+          "text": "uso stream"
+        },
+        {
+          "text": "Tengo la xbox"
+        },
+        {
+          "text": "tengo la ps4"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "Edad",
+      "examples": [
+        {
+          "text": "Claro, tengo 23 años"
+        },
+        {
+          "text": "Si, tengo 23 años"
+        },
+        {
+          "text": "23 años"
+        },
+        {
+          "text": "mi edad es 30"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "Personaje",
+      "examples": [
+        {
+          "text": "rosa"
+        },
+        {
+          "text": "quiero jugar como girasol"
+        },
+        {
+          "text": "escojo imp"
+        },
+        {
+          "text": "mi personaje sería sol"
+        },
+        {
+          "text": "sería flor"
+        },
+        {
+          "text": "me encantaría jugar con rosa"
+        },
+        {
+          "text": "el poderoso cactus"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "Si",
+      "examples": [
+        {
+          "text": "Por supuesto"
+        },
+        {
+          "text": "Si"
+        },
+        {
+          "text": "Siii"
+        },
+        {
+          "text": "Yes"
+        }
+      ],
+      "description": "Para entrar al torneo"
+    },
+    {
+      "intent": "No",
+      "examples": [
+        {
+          "text": "No, gracias."
+        },
+        {
+          "text": "Por el momento no."
+        },
+        {
+          "text": "No"
+        },
+        {
+          "text": "Nop"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "Correo",
+      "examples": [
+        {
+          "text": "ejemplo@correo.com"
+        },
+        {
+          "text": "si, ejemplo@correo.com"
+        },
+        {
+          "text": "Claro, es ejemplo@correo.com"
+        },
+        {
+          "text": "mi correo es yo@gmail.com"
+        },
+        {
+          "text": "claro, es pablo@hotmail.com"
+        },
+        {
+          "text": "Claro, mi correo es ejemplo@correo.com"
+        },
+        {
+          "text": "Mi correo es ejemplo@correo.com"
+        }
+      ],
+      "description": "Mi correo es ejemplo@correo.com"
+    }
+  ],
+  "entities": [
+    {
+      "entity": "Zombie",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Patinadora eléctrica",
+          "synonyms": [
+            "patinadora",
+            "bailarina",
+            "Electric Slides",
+            "eléctrica"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Héroe ochentero",
+          "synonyms": [
+            "80s Action Hero"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Científico",
+          "synonyms": [
+            "Scientists",
+            "Laboratorista loco",
+            "Zombi Loco",
+            "Zombi Cientifico"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Ingeniero",
+          "synonyms": [
+            "Engineer",
+            "Inge",
+            "Constructor"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "All-Stars",
+          "synonyms": [
+            "Jugador americano",
+            "Zombi americano",
+            "Futbol americano"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Capitán Mortacho",
+          "synonyms": [
+            "Captains Deadbeard",
+            "Pirata",
+            "Zombi Pirata"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Zombidito",
+          "synonyms": [
+            "Z-Mech",
+            "Imp",
+            "Minizombi"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Soldado",
+          "synonyms": [
+            "Foot Soldiers",
+            "Soldier"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Supercerebroz",
+          "synonyms": [
+            "Superzombi",
+            "Super Brainz",
+            "Zombi Heroe"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Cadete espacial",
+          "synonyms": [
+            "Space Cadet",
+            "espacial",
+            "nave espacial"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "sys-number",
+      "values": [],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "Plataforma",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Stream",
+          "synonyms": [
+            "pc",
+            "compu"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Playstation 4",
+          "synonyms": [
+            "play",
+            "ps4",
+            "play 4"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Xbox One",
+          "synonyms": [
+            "xbox",
+            "one",
+            "microsoft"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "Contacto",
+      "values": [
+        {
+          "type": "patterns",
+          "value": "Correo",
+          "patterns": [
+            "\\b[A-Za-z0-9._%+-]+@([A-Za-z0-9-]+\\.)+[A-Za-z]{2,}\\b"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "Genero",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Femenino",
+          "synonyms": [
+            "femenino",
+            "f",
+            "hembra",
+            "niña",
+            "señorita",
+            "señora",
+            "chica"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Masculino",
+          "synonyms": [
+            "masculino",
+            "macho",
+            "niño",
+            "señor",
+            "hombre",
+            "chico",
+            "m"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "Planta",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Mazorca",
+          "synonyms": [
+            "elote",
+            "mazorca",
+            "kernel corn",
+            "corn"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Planta carnívora",
+          "synonyms": [
+            "Planta Carroñívora",
+            "carnívora",
+            "carroñívora",
+            "Chomper"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Cactus",
+          "synonyms": [
+            "Cactus",
+            "cac"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Lanzaguisantes",
+          "synonyms": [
+            "Peashoot",
+            "Lanza Guisantes",
+            "Guisante"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Girasol",
+          "synonyms": [
+            "sunflower",
+            "sol",
+            "girasol"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Bellota",
+          "synonyms": [
+            "Oak & Acorn",
+            "Roble y Bellota",
+            "roble",
+            "tronco",
+            "bellotita",
+            "oak",
+            "acorn"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Gorro de noche",
+          "synonyms": [
+            "hongo",
+            "hongo de noche",
+            "Night Cap",
+            "honguito"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Bocadragón",
+          "synonyms": [
+            "dragón",
+            "Snapdragon",
+            "escupefuego"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Rosa",
+          "synonyms": [
+            "Rose",
+            "flor roja"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Pomelo",
+          "synonyms": [
+            "Toronja",
+            "Citron",
+            "mandarina"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    }
+  ],
+  "language": "es",
+  "metadata": {
+    "api_version": {
+      "major_version": "v1",
+      "minor_version": "2018-09-20"
+    }
+  },
+  "skill_id": "da4c26bf-eb84-4bf8-addc-233a44772b7a",
+  "description": "Chatbot para registrarse a un torneo.",
+  "dialog_nodes": [
+    {
+      "type": "standard",
+      "title": "Clase Defensa - Planta",
+      "output": {
+        "text": {
+          "values": [
+            "Recuerda que $Personaje pertenece a la clase Defensa"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_5_1568098376385",
+      "context": {
+        "Clase": "Defensa"
+      },
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_1_1568103378976"
+      },
+      "conditions": "@Planta:Bellota ||   @Planta:Pomelo || @Planta:Cactus",
+      "dialog_node": "node_2_1568099307584",
+      "previous_sibling": "node_6_1568099121619"
+    },
+    {
+      "type": "standard",
+      "title": "Clase Soporte - Planta",
+      "output": {
+        "text": {
+          "values": [
+            "Recuerda que $Personaje pertenece a la clase Soporte"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_5_1568098376385",
+      "context": {
+        "Clase": "Soporte"
+      },
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_1_1568103378976"
+      },
+      "conditions": "@Planta:Girasol || @Planta:Rosa",
+      "dialog_node": "node_3_1568099409622",
+      "previous_sibling": "node_2_1568099307584"
+    },
+    {
+      "type": "standard",
+      "title": "Clase Ataque - Planta",
+      "output": {
+        "text": {
+          "values": [
+            "Recuerda que $Personaje pertenece a la clase Ataque"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_5_1568098376385",
+      "context": {
+        "Clase": "Ataque"
+      },
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_1_1568103378976"
+      },
+      "conditions": "@Planta:(Gorro de noche) ||       @Planta:(Planta carnívora) ||    @Planta:Bocadragón ||   @Planta:Lanzaguisantes || @Planta:Mazorca",
+      "dialog_node": "node_6_1568099121619"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "text": {
+          "values": [
+            "No se preocupe, puede escoger otro personaje."
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_4_1568103642924",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "condition",
+        "dialog_node": "node_7_1568092954587"
+      },
+      "conditions": "#No",
+      "dialog_node": "node_3_1568164115171",
+      "previous_sibling": "node_10_1568164097942"
+    },
+    {
+      "type": "standard",
+      "parent": "node_4_1568103642924",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_5_1568102914190"
+      },
+      "conditions": "#Si",
+      "dialog_node": "node_10_1568164097942"
+    },
+    {
+      "type": "standard",
+      "title": "Clase Soporte - Zombie",
+      "output": {
+        "text": {
+          "values": [
+            "Recuerda que $Personaje pertenece a la clase Soporte"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_6_1568098504497",
+      "context": {
+        "Clase": "Soporte"
+      },
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_1_1568103378976"
+      },
+      "conditions": "@Zombie:Ingeniero || @Zombie:Científico",
+      "dialog_node": "node_6_1568099508976",
+      "previous_sibling": "node_5_1568099506087"
+    },
+    {
+      "type": "standard",
+      "title": "Clase Defensa - Zombie",
+      "output": {
+        "text": {
+          "values": [
+            "Recuerda que $Personaje pertenece a la clase Defensa"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_6_1568098504497",
+      "context": {
+        "Clase": "Defensa"
+      },
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_1_1568103378976"
+      },
+      "conditions": "@Zombie:(Cadete espacial) ||  @Zombie:All-Stars || @Zombie:(Capitán Mortacho)",
+      "dialog_node": "node_5_1568099506087",
+      "previous_sibling": "node_4_1568099494400"
+    },
+    {
+      "type": "standard",
+      "title": "Clase Ataque - Zombie",
+      "output": {
+        "text": {
+          "values": [
+            "Recuerda que $Personaje pertenece a la clase Ataque"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_6_1568098504497",
+      "context": {
+        "Clase": "Ataque"
+      },
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_1_1568103378976"
+      },
+      "conditions": "@Zombie:Soldado ||     @Zombie:(Patinadora eléctrica) ||   @Zombie:(Héroe ochentero) ||  @Zombie:Zombidito || @Zombie:Supercerebroz",
+      "dialog_node": "node_4_1568099494400"
+    },
+    {
+      "type": "standard",
+      "title": "Tipo Zombie",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "$Personaje, donde pertenece al equipo de los Zombies."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "title": "Zombie",
+            "source": "https://res.cloudinary.com/lmn/image/upload/fl_lossy,q_80/f_auto/v1/gameskinny/40a23d8460ea8e56f285eeb5bac9f356.jpg",
+            "response_type": "image"
+          }
+        ]
+      },
+      "parent": "node_7_1568092954587",
+      "context": {
+        "Equipo": "Zombie",
+        "Personaje": "@Zombie"
+      },
+      "next_step": {
+        "behavior": "skip_user_input"
+      },
+      "conditions": "@Zombie",
+      "dialog_node": "node_6_1568098504497",
+      "previous_sibling": "node_5_1568098376385"
+    },
+    {
+      "type": "standard",
+      "title": "Tipo Planta",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "$Personaje, donde pertenece al equipo de las Plantas."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "title": "Planta",
+            "source": "https://res.cloudinary.com/lmn/image/upload/fl_lossy,q_80/f_auto/v1/gameskinny/d6b2822432be93109dcca80da8910e43.jpg",
+            "response_type": "image"
+          }
+        ]
+      },
+      "parent": "node_7_1568092954587",
+      "context": {
+        "Equipo": "Planta",
+        "Personaje": "@Planta"
+      },
+      "next_step": {
+        "behavior": "skip_user_input"
+      },
+      "conditions": "@Planta",
+      "dialog_node": "node_5_1568098376385",
+      "previous_sibling": "response_7_1568101054802"
+    },
+    {
+      "type": "response_condition",
+      "title": "response_7_1568101054802",
+      "output": {
+        "text": {
+          "values": [
+            "Bien, en un correo le enviaremos los detalles de su registro, ¡Buena Suerte!"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_7_1568092954587",
+      "context": {
+        "Personaje": "@Planta"
+      },
+      "disabled": true,
+      "dialog_node": "response_7_1568101054802"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "text": {
+          "values": [
+            "Genial, me podría proporcionar su edad."
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "context": {
+        "Genero": "<? @Genero ?>"
+      },
+      "conditions": "@Genero",
+      "dialog_node": "node_9_1568097643713",
+      "previous_sibling": "node_6_1568161187097"
+    },
+    {
+      "type": "standard",
+      "title": "Mensaje final",
+      "output": {
+        "text": {
+          "values": [
+            "Bien, ya quedo registrado, le enviaremos un correo de confirmación. ¡Buena suerte!"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "conditions": "",
+      "dialog_node": "node_5_1568102914190",
+      "previous_sibling": "node_4_1568103642924"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "text": {
+          "values": [
+            "Bien! ¿Cuál es su correo?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "context": {
+        "Edad": "<? @sys-number ?>"
+      },
+      "conditions": "@sys-number > 18 && #Edad",
+      "dialog_node": "node_2_1568092651577",
+      "previous_sibling": "node_9_1568097643713"
+    },
+    {
+      "type": "standard",
+      "title": "Si no",
+      "next_step": {
+        "behavior": "skip_user_input"
+      },
+      "conditions": "#No || #Si",
+      "dialog_node": "node_4_1568103642924",
+      "previous_sibling": "node_1_1568103378976"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "text": {
+          "values": [
+            "Genial, ¿eres hombre o mujer?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "context": {
+        "Plataforma": "<? @Plataforma ?>"
+      },
+      "conditions": "#Plataforma && @Plataforma",
+      "dialog_node": "node_6_1568161187097",
+      "previous_sibling": "Bienvenido"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "text": {
+          "values": [
+            "Genial! Ahora ¿qué personaje serías?",
+            "¿Qué planta o zombie serías?"
+          ],
+          "selection_policy": "random"
+        }
+      },
+      "context": {
+        "Correo": "<? @Contacto.literal ?>"
+      },
+      "conditions": "#Correo && @Contacto:Correo",
+      "dialog_node": "node_10_1568092769618",
+      "previous_sibling": "node_2_1568092651577"
+    },
+    {
+      "type": "standard",
+      "title": "Si quieres",
+      "output": {
+        "text": {
+          "values": [
+            "¿Quieres pertenecer al equipo $Equipo, con el personaje $Personaje?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "conditions": "",
+      "dialog_node": "node_1_1568103378976",
+      "previous_sibling": "node_7_1568092954587"
+    },
+    {
+      "type": "standard",
+      "title": "En otras cosas",
+      "output": {
+        "text": {
+          "values": [
+            "No le he entendido. Intente reformular la consulta.",
+            "¿Puede expresarse con otras palabras? No le he entendido.",
+            "No entendí el significado."
+          ],
+          "selection_policy": "random"
+        }
+      },
+      "conditions": "anything_else",
+      "dialog_node": "En otras cosas",
+      "previous_sibling": "node_5_1568102914190"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "text": {
+          "values": [
+            "Genial, haz escogido a"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "context": {},
+      "metadata": {
+        "_customization": {
+          "mcr": false
+        }
+      },
+      "next_step": {
+        "behavior": "skip_user_input"
+      },
+      "conditions": "#Personaje",
+      "dialog_node": "node_7_1568092954587",
+      "previous_sibling": "node_10_1568092769618"
+    },
+    {
+      "type": "standard",
+      "title": "Bienvenido",
+      "output": {
+        "text": {
+          "values": [
+            "Hola Gamer, bienvenido al sistema de registro de e-sports, en esta temporada tenemos \"Plants vs zombies battle for neighborville\", ¿Qué consola tienes?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "conditions": "welcome",
+      "dialog_node": "Bienvenido"
+    }
+  ],
+  "workspace_id": "da4c26bf-eb84-4bf8-addc-233a44772b7a",
+  "counterexamples": [],
+  "system_settings": {},
+  "learning_opt_out": false,
+  "status": "Training"
+}
