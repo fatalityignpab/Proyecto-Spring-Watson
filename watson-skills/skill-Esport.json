@@ -44,13 +44,13 @@
       "intent": "Edad",
       "examples": [
         {
+          "text": "23 años"
+        },
+        {
           "text": "Claro, tengo 23 años"
         },
         {
           "text": "Si, tengo 23 años"
-        },
-        {
-          "text": "23 años"
         },
         {
           "text": "mi edad es 30"
@@ -59,28 +59,43 @@
       "description": ""
     },
     {
+      "intent": "Username",
+      "examples": [
+        {
+          "text": "mi usuario es fatal95"
+        },
+        {
+          "text": "mi nick es jaja.vela"
+        },
+        {
+          "text": "es theone_01"
+        }
+      ],
+      "description": ""
+    },
+    {
       "intent": "Personaje",
       "examples": [
         {
-          "text": "rosa"
+          "text": "escojo imp"
         },
         {
           "text": "quiero jugar como girasol"
         },
         {
-          "text": "escojo imp"
-        },
-        {
           "text": "mi personaje sería sol"
         },
         {
-          "text": "sería flor"
+          "text": "rosa"
+        },
+        {
+          "text": "el poderoso cactus"
         },
         {
           "text": "me encantaría jugar con rosa"
         },
         {
-          "text": "el poderoso cactus"
+          "text": "sería flor"
         }
       ],
       "description": ""
@@ -89,10 +104,10 @@
       "intent": "Si",
       "examples": [
         {
-          "text": "Por supuesto"
+          "text": "Si"
         },
         {
-          "text": "Si"
+          "text": "Por supuesto"
         },
         {
           "text": "Siii"
@@ -110,13 +125,13 @@
           "text": "No, gracias."
         },
         {
+          "text": "Nop"
+        },
+        {
           "text": "Por el momento no."
         },
         {
           "text": "No"
-        },
-        {
-          "text": "Nop"
         }
       ],
       "description": ""
@@ -523,7 +538,7 @@
       "parent": "node_4_1568103642924",
       "next_step": {
         "behavior": "jump_to",
-        "selector": "condition",
+        "selector": "user_input",
         "dialog_node": "node_7_1568092954587"
       },
       "conditions": "#No",
@@ -864,5 +879,5 @@
   "counterexamples": [],
   "system_settings": {},
   "learning_opt_out": false,
-  "status": "Training"
+  "status": "Available"
 }
