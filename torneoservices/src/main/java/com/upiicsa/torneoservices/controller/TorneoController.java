@@ -2,7 +2,7 @@ package com.upiicsa.torneoservices.controller;
 
 /* import java.util.Optional; */
 
-import com.upiicsa.torneoservices.errorhandling.InvalidTorneoException;
+//import com.upiicsa.torneoservices.errorhandling.InvalidTorneoException;
 import com.upiicsa.torneoservices.model.ResponseCode;
 import com.upiicsa.torneoservices.model.TorneoDocument;
 import com.upiicsa.torneoservices.service.api.ITorneoServices;
@@ -26,7 +26,7 @@ public class TorneoController {
         if (torneoService.saveRegistro(document) == 200) {
             return new ResponseCode(200, "Registro");
         } else {
-            throw new InvalidTorneoException("Error en el Controller");
+            return new ResponseCode(500, "Correo Existente");
         }
     }
 }
