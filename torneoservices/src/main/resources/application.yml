@@ -5,5 +5,20 @@ spring:
       host: localhost
       port: 27017
       database: registro
+  mail:
+    host: smtp.mailtrap.io
+    port: 2525
+    username: f76429c342fdb2
+    password: dad0028f80db76
+    properties:
+      mail:
+        smtp:
+          auth: true
+          connectiontimeout: 5000
+          timeout: 5000
+          writetimeout: 5000
+          starttls:
+            enable: true
+
 server:
   port: 8082

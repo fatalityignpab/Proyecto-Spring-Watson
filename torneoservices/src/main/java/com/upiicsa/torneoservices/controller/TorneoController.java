@@ -21,21 +21,12 @@ public class TorneoController {
     @Autowired
     ITorneoServices torneoService;
 
-    /*
-     * @PostMapping(path = "/registro", consumes = "application/json", produces =
-     * "application/json") public ResponseEntity<Optional<TorneoDocument>>
-     * registrar(@RequestBody TorneoDocument document) { return new
-     * ResponseEntity<Optional<TorneoDocument>>(torneoService.saveRegistro(document)
-     * , HttpStatus.CREATED); }
-     */
-
     @PostMapping(path = "/registro", consumes = "application/json", produces = "application/json")
     public ResponseCode registrar(@RequestBody TorneoDocument document) {
         if (torneoService.saveRegistro(document) == 200) {
             return new ResponseCode(200, "Registro");
         } else {
-            /* return new ResponseCode(204, "Correo existente"); */
-            throw new InvalidTorneoException("Torneo id: " + String.valueOf(document.getId()) + " does exist.");
+            throw new InvalidTorneoException("Error en el Controller");
         }
     }
 }

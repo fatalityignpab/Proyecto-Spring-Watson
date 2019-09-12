@@ -7,6 +7,6 @@ import com.upiicsa.torneoservices.model.TorneoDocument;
 public interface ITorneoServices {
 
     int saveRegistro(TorneoDocument document);
-    
+    void enviarCorreo(String correo) throws Exception;
     
 }
