@@ -1,4 +1,4 @@
-package com.upiicsa.services;
+package com.upiicsa.torneoservices;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

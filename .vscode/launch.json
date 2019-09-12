@@ -4,6 +4,19 @@
             "type": "java",
             "name": "CodeLens (Launch) - DemoApplication",
             "request": "launch",
+            "mainClass": "com.upiicsa.torneoservices.DemoApplication"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - DemoApplication",
+            "request": "launch",
+            "mainClass": "com.upiicsa.services.DemoApplication",
+            "projectName": "services"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - DemoApplication",
+            "request": "launch",
             "mainClass": "com.upiicsa.config.DemoApplication",
             "projectName": "config"
         }

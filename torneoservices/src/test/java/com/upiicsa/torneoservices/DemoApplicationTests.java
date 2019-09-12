@@ -1,4 +1,4 @@
-package com.upiicsa.services;
+package com.upiicsa.torneoservices;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
