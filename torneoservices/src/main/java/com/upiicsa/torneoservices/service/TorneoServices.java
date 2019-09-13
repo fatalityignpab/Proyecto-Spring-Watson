@@ -20,15 +20,8 @@ public class TorneoServices implements ITorneoServices {
     @Autowired
     TorneoMongoRepository torneoRepo;
 
-    private JavaMailSender email;
-
     @Autowired
-    public TorneoServices(JavaMailSender email) {
-        this.email = email;
-    }
-
-    //String correoPara = "8d6b88ee32-515714@inbox.mailtrap.io";
-    String correoPara = "torneoesport2@gmail.com";
+    private JavaMailSender email;
 
     @Override
     public int saveRegistro(TorneoDocument document) {
@@ -43,14 +36,13 @@ public class TorneoServices implements ITorneoServices {
                 return 500;
             }
         } catch (MailException e) {
-            throw new InvalidTorneoException("Error en el Services");
+            throw new InvalidTorneoException("Error en el Services, desconecte su Antivirus");
         }
     }
 
     @Override
     public void enviarCorreo(String correo, String asunto, String texto) throws MailException{
         SimpleMailMessage mensaje = new SimpleMailMessage();
-        mensaje.setFrom(this.correoPara);
         mensaje.setTo(correo);
         mensaje.setSubject(asunto);
         mensaje.setText(texto);
