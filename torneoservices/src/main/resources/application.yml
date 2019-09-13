@@ -1,5 +1,7 @@
 
 spring:
+  application:
+    name: service-registro
   data:
     mongodb:
       host: localhost
@@ -16,6 +18,10 @@ spring:
           auth: true
           ssl:
             enable: true
+eureka:
+  client:
+    service-url:
+      default-zone: http://localhost:8761/eureka/
 
 server:
   port: 8082
