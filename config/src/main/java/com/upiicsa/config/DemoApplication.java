@@ -12,4 +12,6 @@ public class DemoApplication {
 		SpringApplication.run(DemoApplication.class, args);
 	}
 
+	// http://localhost:8888/service-registro/dev
+
 }

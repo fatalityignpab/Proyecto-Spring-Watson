@@ -9,6 +9,7 @@ import com.upiicsa.torneoservices.repository.TorneoMongoRepository;
 import com.upiicsa.torneoservices.service.api.ITorneoServices;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.mail.MailException;
 import org.springframework.mail.SimpleMailMessage;
 import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.stereotype.Service;
@@ -19,8 +20,12 @@ public class TorneoServices implements ITorneoServices {
     @Autowired
     TorneoMongoRepository torneoRepo;
 
-    @Autowired
     private JavaMailSender email;
+
+    @Autowired
+    public TorneoServices(JavaMailSender email) {
+        this.email = email;
+    }
 
     //String correoPara = "8d6b88ee32-515714@inbox.mailtrap.io";
     String correoPara = "torneoesport2@gmail.com";
@@ -37,13 +42,13 @@ public class TorneoServices implements ITorneoServices {
                 enviarCorreo(correo, "Registro existente", "Perdon! pero su correo ya ha sido registrado");
                 return 500;
             }
-        } catch (Exception e) {
+        } catch (MailException e) {
             throw new InvalidTorneoException("Error en el Services");
         }
     }
 
     @Override
-    public void enviarCorreo(String correo, String asunto, String texto) {
+    public void enviarCorreo(String correo, String asunto, String texto) throws MailException{
         SimpleMailMessage mensaje = new SimpleMailMessage();
         mensaje.setFrom(this.correoPara);
         mensaje.setTo(correo);

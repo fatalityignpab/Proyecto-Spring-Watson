@@ -4,6 +4,13 @@
             "type": "java",
             "name": "CodeLens (Launch) - DemoApplication",
             "request": "launch",
+            "mainClass": "com.upiicsa.eureka.DemoApplication",
+            "projectName": "eureka"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - DemoApplication",
+            "request": "launch",
             "mainClass": "com.upiicsa.torneoservices.DemoApplication"
         },
         {
