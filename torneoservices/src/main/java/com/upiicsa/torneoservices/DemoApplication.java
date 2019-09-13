@@ -10,4 +10,6 @@ public class DemoApplication {
 		SpringApplication.run(DemoApplication.class, args);
 	}
 
+	// No se porque no funciona el ConfigServer, tiene que ver con JavaMailer
+
 }
