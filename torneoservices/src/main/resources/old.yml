@@ -6,10 +6,10 @@ spring:
       port: 27017
       database: registro
   mail:
-    host: smtp.gmail.com
-    port: 587
-    username: torneoesport2@gmail.com
-    password: Planta123
+    host: smtp.mailtrap.io
+    port: 2525
+    username: f76429c342fdb2
+    password: dad0028f80db76
     properties:
       mail:
         smtp:
