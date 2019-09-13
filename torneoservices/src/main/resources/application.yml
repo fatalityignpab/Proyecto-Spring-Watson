@@ -4,8 +4,7 @@ spring:
     name: service-registro
   data:
     mongodb:
-      host: localhost
-      port: 27017
+      uri: mongodb+srv://torneo:registro@cluster0-gojkg.azure.mongodb.net/test?retryWrites=true&w=majority
       database: registro
   mail:
     host: smtp.gmail.com
