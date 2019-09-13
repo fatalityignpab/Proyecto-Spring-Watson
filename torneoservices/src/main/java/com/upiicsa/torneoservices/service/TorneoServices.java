@@ -23,16 +23,25 @@ public class TorneoServices implements ITorneoServices {
     @Autowired
     private JavaMailSender email;
 
+    String equipo, personaje, clase;
+
     @Override
     public int saveRegistro(TorneoDocument document) {
         try {
             String correo = document.getCorreo();
             if (!torneoRepo.findByCorreo(document.getCorreo()).isPresent()) {
-                enviarCorreo(correo, "Registro correcto", "Listo para el torneo!\nBuena Suerte!");
+                equipo = document.getEquipo();
+                personaje = document.getPersonaje();
+                clase = document.getClase();
+                enviarCorreo(correo, "Registro correcto", 
+                "Listo para el torneo!\nTú escogiste el equipo de "+equipo+
+                ":\n- "+personaje+"\n- Clase "+clase+"\n\nBuena Suerte!");
                 torneoRepo.save(document);
                 return 200;
             } else {
-                enviarCorreo(correo, "Registro existente", "Perdon! pero su correo ya ha sido registrado");
+                enviarCorreo(correo, "Registro existente", 
+                "Perdon! pero su correo ya ha sido registrado\nTú escogiste el equipo de "+equipo+
+                ":\n- "+personaje+"\n- Clase "+clase+"\n\n");
                 return 500;
             }
         } catch (MailException e) {
