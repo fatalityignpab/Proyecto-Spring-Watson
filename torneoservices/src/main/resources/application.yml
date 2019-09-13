@@ -2,22 +2,12 @@
 spring:
   application:
     name: service-registro
-  data:
-    mongodb:
-      host: localhost
-      port: 27017
-      database: registro
-  mail:
-    host: smtp.gmail.com
-    port: 465
-    username: torneoesport2@gmail.com
-    password: Planta123
-    properties:
-      mail:
-        smtp:
-          auth: true
-          ssl:
-            enable: true
+  profiles:
+    active: dev
+  cloud:
+    config:
+      uri: http://localhost:8888
+
 eureka:
   client:
     service-url:
